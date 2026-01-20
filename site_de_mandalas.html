@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mandalas • Arte, Fé e Harmonia</title>
+  <meta name="description" content="Mandalas artísticas e espirituais com respeito e neutralidade a todas as fés." />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+      color: #333;
+      line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.8), transparent),
+        radial-gradient(2px 2px at 70% 20%, rgba(255,255,255,0.7), transparent),
+        radial-gradient(1.5px 1.5px at 40% 80%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(2px 2px at 80% 70%, rgba(255,255,255,0.8), transparent),
+        radial-gradient(3px 3px at 30% 60%, rgba(255,255,255,0.5), transparent);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(40px 40px at 10% 90%, rgba(255,192,203,0.15), transparent),
+        radial-gradient(50px 50px at 90% 85%, rgba(221,160,221,0.18), transparent),
+        radial-gradient(35px 35px at 80% 10%, rgba(173,216,230,0.15), transparent);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,0.85);
+      background: #ffffff;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      color: #666;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .neutralidade {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .neutralidade p {
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    .cta {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      padding: 18px 30px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #1ebe5d;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+      color: #666;
+      background: #f1f1f1;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer span {
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mandalas LyTos• Arte e Harmonia</h1>
+    <p>Um espaço de criação artística que respeita todas as crenças, caminhos espirituais e formas de ver o mundo.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Categorias de Mandalas</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Mandalas Budistas</h3>
+          <p>Inspiradas em símbolos de equilíbrio, meditação e consciência, auxiliam no foco e na conexão interior.</p>
+        </div>
+
+        <div class="card">
+          <h3>Mandalas Católicas</h3>
+          <p>Elementos artísticos que remetem à fé, devoção e espiritualidade, sempre com respeito e sensibilidade.</p>
+        </div>
+
+        <div class="card">
+          <h3>Mandalas Infantis</h3>
+          <p>Criadas com cores suaves e formas lúdicas, promovem criatividade, tranquilidade e alegria.</p>
+        </div>
+
+        <div class="card">
+          <h3>Mandalas Afro-brasileiras</h3>
+          <p>Arte inspirada nas tradições e na força cultural das religiões afro-brasileiras, com profundo respeito e neutralidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="neutralidade">
+      <h2>Neutralidade e Respeito</h2>
+      <p>
+        Nosso trabalho é guiado pelo respeito absoluto a todas as crenças, religiões e filosofias de vida. 
+        As mandalas são expressões artísticas e simbólicas, criadas para harmonizar ambientes, inspirar reflexão 
+        e valorizar a diversidade espiritual, sem promover ou impor qualquer fé.
+      </p>
+    </section>
+
+    <div class="cta">
+      <a href="https://wa.me/c/5511992833482" target="_blank">Conhecer Mandalas no WhatsApp</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 • Mandalas LyTos Arts • <span>Respeito • Neutralidade • Harmonia</span></p>
+  </footer>
+
+</body>
+</html>
